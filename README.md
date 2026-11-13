@@ -4,7 +4,7 @@ This repository holds the code for an analysis of a targeted serum metabolomics 
 
 ## Data availability
 
-The measurements are unpublished laboratory data and are not included in this repository. Only the code, aggregate summary statistics, and a summary figure are public; results for individual metabolites are written to a folder that is excluded from version control. To run the analysis, place `Kstudy_serum.csv` in `data/private/`.
+The study to which these samples belong has been published (Avin et al., 2019; Avin et al., 2021), although the serum metabolite table itself is not included in this repository. Only the code, aggregate summary statistics, and a summary figure are public; results for individual metabolites are written to a folder that is excluded from version control. To run the analysis, place `Kstudy_serum.csv` in `data/private/`.
 
 ```
 pip install -r requirements.txt
@@ -38,6 +38,14 @@ Sixty-four metabolites differ between exercised CKD animals and normal controls,
 ## Limitations
 
 Each group has ten animals and all samples were run on one plate, so modest effects of exercise would go undetected and plate-level artefacts cannot be assessed. No information on fasting status or time of collection was available, which bears directly on the interpretation of the fourth finding. Metabolite classes are assigned from the panel's naming convention.
+
+## Related publications
+
+The three groups analysed here correspond to the design of a published rat model of CKD in which animals were given ten weeks of voluntary wheel running. Avin et al. (2019) reported the effects of wheel running on serum biochemistry, physical function, and bone, and Avin et al. (2021) reported targeted metabolomics of the soleus and extensor digitorum longus with a panel of approximately 180 metabolites drawn from the same chemical classes as the serum panel analysed here. The absence of a detectable exercise effect in serum is consistent with the muscle findings of Avin et al. (2021), in which amino acid-related compounds that were reduced by CKD were not restored by physical activity.
+
+Avin, K. G., Allen, M. R., Chen, N. X., Srinivasan, S., O'Neill, K. D., Troutman, A. D., Mast, G., Swallow, E. A., Brown, M. B., Wallace, J. M., Zimmers, T. A., Warden, S. J., & Moe, S. M. (2019). Voluntary wheel running has beneficial effects in a rat model of CKD-mineral bone disorder (CKD-MBD). *Journal of the American Society of Nephrology, 30*(10), 1898–1909. https://doi.org/10.1681/ASN.2019040349
+
+Avin, K. G., Hughes, M. C., Chen, N. X., Srinivasan, S., O'Neill, K. D., Evan, A. P., Bacallao, R. L., Schulte, M. L., Moorthi, R. N., Gisch, D. L., Perry, C. G. R., Moe, S. M., & O'Connell, T. M. (2021). Skeletal muscle metabolic responses to physical activity are muscle type specific in a rat model of chronic kidney disease. *Scientific Reports, 11*, Article 9788. https://doi.org/10.1038/s41598-021-89120-8
 
 ## Acknowledgement
 
