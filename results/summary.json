@@ -1,0 +1,166 @@
+{
+  "samples": 30,
+  "per_group": {
+    "Normal": 10,
+    "CKD": 10,
+    "CKD+wheel": 10
+  },
+  "metabolites_analysed": 185,
+  "class_sizes": {
+    "phosphatidylcholines": 76,
+    "acylcarnitines": 40,
+    "amino acids": 21,
+    "biogenic amines": 18,
+    "sphingomyelins": 15,
+    "lysophosphatidylcholines": 14,
+    "hexose": 1
+  },
+  "contrasts": {
+    "CKD vs Normal": {
+      "fdr_lt_0.05": 15,
+      "up": 12,
+      "down": 3,
+      "also_mannwhitney_p_lt_0.05": 15,
+      "nominal_p_lt_0.05": 53,
+      "by_class": {
+        "acylcarnitines": {
+          "n": 40,
+          "significant": 3,
+          "mean_log2fc": -0.06
+        },
+        "amino acids": {
+          "n": 21,
+          "significant": 1,
+          "mean_log2fc": -0.16
+        },
+        "biogenic amines": {
+          "n": 18,
+          "significant": 4,
+          "mean_log2fc": 0.7
+        },
+        "lysophosphatidylcholines": {
+          "n": 14,
+          "significant": 2,
+          "mean_log2fc": -0.55
+        },
+        "phosphatidylcholines": {
+          "n": 76,
+          "significant": 2,
+          "mean_log2fc": -0.08
+        },
+        "sphingomyelins": {
+          "n": 15,
+          "significant": 3,
+          "mean_log2fc": 0.38
+        },
+        "hexose": {
+          "n": 1,
+          "significant": 0,
+          "mean_log2fc": -0.07
+        }
+      }
+    },
+    "CKD+wheel vs CKD": {
+      "fdr_lt_0.05": 0,
+      "up": 0,
+      "down": 0,
+      "also_mannwhitney_p_lt_0.05": 0,
+      "nominal_p_lt_0.05": 10,
+      "by_class": {
+        "acylcarnitines": {
+          "n": 40,
+          "significant": 0,
+          "mean_log2fc": -0.13
+        },
+        "amino acids": {
+          "n": 21,
+          "significant": 0,
+          "mean_log2fc": -0.13
+        },
+        "biogenic amines": {
+          "n": 18,
+          "significant": 0,
+          "mean_log2fc": -0.26
+        },
+        "lysophosphatidylcholines": {
+          "n": 14,
+          "significant": 0,
+          "mean_log2fc": -0.21
+        },
+        "phosphatidylcholines": {
+          "n": 76,
+          "significant": 0,
+          "mean_log2fc": -0.26
+        },
+        "sphingomyelins": {
+          "n": 15,
+          "significant": 0,
+          "mean_log2fc": -0.29
+        },
+        "hexose": {
+          "n": 1,
+          "significant": 0,
+          "mean_log2fc": -0.26
+        }
+      }
+    },
+    "CKD+wheel vs Normal": {
+      "fdr_lt_0.05": 64,
+      "up": 7,
+      "down": 57,
+      "also_mannwhitney_p_lt_0.05": 63,
+      "nominal_p_lt_0.05": 90,
+      "by_class": {
+        "acylcarnitines": {
+          "n": 40,
+          "significant": 11,
+          "mean_log2fc": -0.19
+        },
+        "amino acids": {
+          "n": 21,
+          "significant": 10,
+          "mean_log2fc": -0.29
+        },
+        "biogenic amines": {
+          "n": 18,
+          "significant": 7,
+          "mean_log2fc": 0.44
+        },
+        "lysophosphatidylcholines": {
+          "n": 14,
+          "significant": 9,
+          "mean_log2fc": -0.76
+        },
+        "phosphatidylcholines": {
+          "n": 76,
+          "significant": 26,
+          "mean_log2fc": -0.34
+        },
+        "sphingomyelins": {
+          "n": 15,
+          "significant": 1,
+          "mean_log2fc": 0.09
+        },
+        "hexose": {
+          "n": 1,
+          "significant": 0,
+          "mean_log2fc": -0.33
+        }
+      }
+    }
+  },
+  "rescue": {
+    "disease_altered_metabolites": 15,
+    "correlation_disease_effect_vs_exercise_effect_all": -0.39,
+    "correlation_among_disease_altered": -0.16,
+    "disease_altered_moved_toward_normal": 12,
+    "median_fraction_of_disease_effect_reversed": 0.27,
+    "still_different_from_normal_after_wheel_fdr": 9,
+    "disease_altered_and_significantly_changed_by_wheel": 0
+  },
+  "pca_variance_explained": [
+    0.439,
+    0.195
+  ],
+  "constant_metabolites_dropped": 3
+}
